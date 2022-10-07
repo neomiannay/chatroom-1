@@ -12,6 +12,14 @@ export const HomePageContainer = styled.div`
     justify-content: center;
 
     gap: 1rem;
+
+    h1{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 4px;
+        margin: 0;
+        font-weight: bold;
+    }
     
     span {
         font-family: 'Barlow Condensed', sans-serif;

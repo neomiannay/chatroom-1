@@ -12,6 +12,7 @@ function HomePage ({socket, setUsername, setIsConnected}) {
         return (
             <HomePageContainer>
                 
+                <h1>Le Couloir</h1>
                 <img src="loginDoor.png" />
                 <NameInput
                     socket={socket}
