@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { LeaveButtonContainer } from "./LeaveButton.styles";
 
-function LeaveButton({ setIsConnected }) {
+function LeaveButton({ setIsDoorClicked }) {
 
     // const [room, setRoom] = useState("");
     // const [user, setUser] = useState("");
@@ -18,9 +18,7 @@ function LeaveButton({ setIsConnected }) {
     
     return (
         <LeaveButtonContainer
-            onClick={() => {
-                setIsConnected(false);
-            }}
+            onClick={() => setIsDoorClicked(false)}
         >
             <p>Sortie</p>
             <svg width="88" height="14" viewBox="0 0 88 14" fill="none" xmlns="http://www.w3.org/2000/svg">

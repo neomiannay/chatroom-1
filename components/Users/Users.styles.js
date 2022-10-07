@@ -31,7 +31,7 @@ export const UsersContainer = styled.div`
             gap: 1em;
             
             margin: auto;
-            padding: 1.25rem 2rem;
+            padding: 1rem 2rem;
 
             span {
                 width: 100%;
@@ -43,7 +43,7 @@ export const UsersContainer = styled.div`
 
         p {
             margin: 0;
-            padding-bottom: 1rem;
+            padding: 1rem 2rem;
             text-align: center;
         }
     }

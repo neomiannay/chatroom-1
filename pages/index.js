@@ -8,11 +8,13 @@ import io from "socket.io-client";
 import HeaderContainer from '../components/HeaderContainer/HeaderContainer'
 
 import HomePage from '../components/HomePage/HomePage'
+import Corridor from '../components/Corridor/Corridor'
 import Messages from "../components/Messages/Messages";
 import MessageInput from "../components/MessageInput/MessageInput";
 import Users from "../components/Users/Users";
 import LeaveButton from "../components/LeaveButton/LeaveButton";
 
+// import { motion } from "framer-motion"
 
 
 export default function Home() {
@@ -20,6 +22,7 @@ export default function Home() {
   const [username, setUsername] = useState(null);
   const [socket, setSocket] = useState(null);
   const [isConnected, setIsConnected] = useState(false);
+  const [isDoorClicked, setIsDoorClicked] = useState(false);
 
   
   useEffect(() => { 
@@ -40,6 +43,12 @@ export default function Home() {
           setUsername={setUsername}
           setIsConnected={setIsConnected}
         />
+      ) : !isDoorClicked ? (
+        //component couloir
+        <Corridor
+          setIsConnected={setIsConnected}
+          setIsDoorClicked={setIsDoorClicked}
+        />
       ) : (
         <main className={styles.main}>
           
@@ -50,10 +59,10 @@ export default function Home() {
                 <Messages socket={socket} />
                 <Users socket={socket} />
                 <MessageInput socket={socket} />
-                <LeaveButton socket={socket} setIsConnected={setIsConnected} />
+                <LeaveButton socket={socket} setIsDoorClicked={setIsDoorClicked} />
               </div>
             </>
-            
+
         </main>
       )}
     </>

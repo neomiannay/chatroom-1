@@ -7,11 +7,12 @@ export const StyledForm = styled.form`
 
     display: flex;
     flex-direction: column;
+    font-family: 'Barlow Condensed', sans-serif;
 
     h3{
         text-align: center;
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     input {
@@ -20,6 +21,7 @@ export const StyledForm = styled.form`
         max-width: 500px;
         border-radius: 8px;
         border: 1px solid #313131;
+        font-family: 'Barlow Condensed', sans-serif;
 
         padding: 0.5rem 1rem;
         margin: auto;

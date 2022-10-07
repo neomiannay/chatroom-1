@@ -18,6 +18,7 @@ export const MessageInputContainer = styled.form`
         max-width: 400px;
         border-radius: 8px;
         border: 1px solid #313131;
+        font-family: 'Barlow Condensed', sans-serif;
 
         padding: 0.5rem 1rem;
         margin: auto;

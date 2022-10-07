@@ -22,7 +22,7 @@ const NewMessage = ({ socket }) => {
   }, [socket])
 
   return (
-    <MessageInputContainer onSubmit={submitForm}>
+    <MessageInputContainer onSubmit={submitForm} autocomplete="off">
       <input
         id="messageInput"
         autoFocus

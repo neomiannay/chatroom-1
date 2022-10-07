@@ -15,14 +15,14 @@ const NameInput = ({ socket, setUsername, setIsConnected }) => {
   };
 
   return (
-    <StyledForm onSubmit={submitForm}>
+    <StyledForm onSubmit={submitForm} autocomplete="off">
       <h3>Veuillez indiquer votre identité afin de pouvoir rentrer</h3>
       <input
         id="messageInput"
         autoFocus
         value={value}
         maxLength="20"
-        // placeholder="Set your name"
+        placeholder="Écrivez votre nom ici"
         onChange={(e) => {
           setValue(e.currentTarget.value);
         }}

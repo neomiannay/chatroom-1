@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { HomePageContainer } from './HomePage.styles'
 import NameInput from '../NameInput/NameInput'
 
+
 function HomePage ({socket, setUsername, setIsConnected}) {
     
         // const [username, setUsername] = useState(null);
