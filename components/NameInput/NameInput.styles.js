@@ -25,6 +25,7 @@ export const StyledForm = styled.form`
 
         padding: 0.5rem 1rem;
         margin: auto;
+        font-size: 1.2rem;
 
 
         &:focus {
