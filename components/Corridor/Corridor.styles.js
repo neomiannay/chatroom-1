@@ -48,8 +48,10 @@ export const CorridorContainer = styled.div`
         }
 
         p{
+            font-size: 2rem;
+            font-family: 'Barlow Condensed', sans-serif;
             margin: 0;
-            text-align: left;
+            text-align: right;
         }
 
         svg {

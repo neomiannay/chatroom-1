@@ -14,7 +14,8 @@ export const HomePageContainer = styled.div`
     gap: 1rem;
     
     span {
-        font-size: 1.25rem;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.5rem;
         position: absolute;
         bottom: 2rem;
         right: 2rem;

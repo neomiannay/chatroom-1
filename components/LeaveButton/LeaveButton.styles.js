@@ -21,6 +21,7 @@ export const LeaveButtonContainer = styled.div`
     }
 
     p{
+        font-size: 2rem;
         margin: 0;
         text-align: left;
     }
