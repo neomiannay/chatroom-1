@@ -27,7 +27,7 @@ export default function Home() {
   
   useEffect(() => { 
     //connection au serveur
-    const socket = io("https://whispering-chamber-09886.herokuapp.com/");
+    const socket = io("https://fast-citadel-55381.herokuapp.com/");
     setSocket(socket);
     socket.on("connect", () => {
       console.log("Connected to server");
